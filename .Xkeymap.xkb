@@ -353,7 +353,7 @@ xkb_types "complete" {
     type "WITH_UNIVERSAL_SYMBOL" {
         modifiers= Shift+Control+Alt+Super;
         map[Alt]= Level2;
-        //map[Control+Alt+Super]= Level2;
+        map[Control+Alt+Super]= Level2;
         map[Shift+Control+Alt+Super]= Level3;
         level_name[Level1]= "Base";
         level_name[Level2]= "UniversalSymbol";
@@ -1237,7 +1237,7 @@ xkb_symbols "pc+us+inet(evdev)" {
     key <AE05> {         [               5,         percent ] };
     key <AE06> {         [               6,     asciicircum ] };
     key <AE07> {         [               7,       ampersand ] };
-    key <AE08> {         [               8,        asterisk ] };
+    key <AE08> {         [               8,        question ] };
     key <AE09> {         [               9,            less ] };
     key <AE10> {         [               0,         greater ] };
     key <AE11> {         [           equal,      underscore ] };
@@ -1380,10 +1380,10 @@ xkb_symbols "pc+us+inet(evdev)" {
     key <LALT> {         [           Alt_L,          Meta_L ] };
     key <SPCE> {         [           space ] };
     key <CAPS> {         [       Caps_Lock ] };
-    key <FK01> {
-        type= "WITH_UNIVERSAL_SYMBOL",
-        symbols[Group1]= [              F1, exclam, F1 ]
-    };
+    //key <FK14> {
+        //type= "WITH_UNIVERSAL_SYMBOL",
+        //symbols[Group1]= [              F1, a, a]
+    //};
     key <FK02> {
         type= "ONE_LEVEL",
         symbols[Group1]= [              F2 ]
@@ -1419,6 +1419,18 @@ xkb_symbols "pc+us+inet(evdev)" {
     key <FK10> {
         type= "SHIFT+ALT",
         symbols[Group1]= [              a, parenright ]
+    };
+    key <FK14> {
+        type= "ONE_LEVEL",
+        symbols[Group1]= [              F14 ]
+    };
+    key <FK15> {
+        type= "ONE_LEVEL",
+        symbols[Group1]= [              F15 ]
+    };
+    key <FK16> {
+        type= "ONE_LEVEL",
+        symbols[Group1]= [              F16 ]
     };
     key <NMLK> {         [        Num_Lock ] };
     key <SCLK> {         [     Scroll_Lock ] };
@@ -1551,9 +1563,9 @@ xkb_symbols "pc+us+inet(evdev)" {
     key <I189> {         [         XF86New ] };
     key <I190> {         [            Redo ] };
     key <FK13> {         [       XF86Tools ] };
-    key <FK14> {         [     XF86Launch5 ] };
-    key <FK15> {         [     XF86Launch6 ] };
-    key <FK16> {         [     XF86Launch7 ] };
+    //key <FK14> {         [     XF86Launch5 ] };
+    //key <FK15> {         [     XF86Launch6 ] };
+    //key <FK16> {         [     XF86Launch7 ] };
     key <FK17> {         [     XF86Launch8 ] };
     key <FK18> {         [     XF86Launch9 ] };
     key <FK20> {         [ XF86AudioMicMute ] };
